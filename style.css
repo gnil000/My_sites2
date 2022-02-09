@@ -9,7 +9,7 @@ body {
 .slider {
   top: 10px;
   position: relative;
-  padding: 0px 130px;
+  /*padding: 0px 130px;*/
 }
 .div_img {
   display: flex;
@@ -17,7 +17,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+#long_img {
+  width: 320px;
+  z-index: -1;
+}
+.big_img {
+  width: 320px;
+}
+.slick-cloned {
+  overflow: hidden;
+}
 .slick-track {
   display: flex;
   flex-direction: row;
@@ -40,4 +49,17 @@ body {
 .slick-arrow.slick-next {
   right: 0;
   background: url(down_icon-icons.com_61209.png) 0 0 / 100% no-repeat;
+}
+
+@media (min-width: 845px) {
+  .big_img {
+    width: auto;
+    height: 596px;
+  }
+  #long_img {
+    width: auto;
+  }
+  .slider {
+    padding: 0px 130px;
+  }
 }
