@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  padding-block: 20px;
+}
